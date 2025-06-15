@@ -1,31 +1,32 @@
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #8B9DC3;
-            --secondary-color: #DDB892;
-            --accent-color: #F4A261;
-            --soft-pink: #F8D7DA;
-            --mint-green: #D1E7DD;
-            --lavender: #E2D5F1;
-            --cream: #FFF8DC;
-            --text-dark: #2C3E50;
-            --text-light: #6C757D;
-            --white: #FFFFFF;
-            --shadow: rgba(0, 0, 0, 0.1);
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
             line-height: 1.6;
             color: var(--text-dark);
             overflow-x: hidden;
         }
+:root {
+  --primary-color: #fcbcc9;
+  --secondary-color: #f86e63;
+  --accent-color: #f86e63;
+  --soft-pink: #fcbcc9;
+  --mint-green: #fcbcc9;
+  --lavender: #fcbcc9;
+  --cream: #fcbcc9;
+   --text-dark: #2C3E50;
+            --text-light: #6C757D;
+  --white: #FFFFFF;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
         /* Header */
        
 
@@ -81,12 +82,14 @@
             font-weight: bold;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+             font-family: Arial, sans-serif;
         }
 
         .hero-subtitle {
             font-size: 1.4rem;
             margin-bottom: 2rem;
             opacity: 0.95;
+             font-family: Arial, sans-serif;
         }
 
         .cta-buttons {
@@ -94,6 +97,7 @@
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+             font-family: Arial, sans-serif;
         }
 
         .btn {
@@ -106,6 +110,7 @@
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
+             font-family: Arial, sans-serif;
         }
 
         .btn-primary {
@@ -166,6 +171,7 @@
         .section-header {
             text-align: center;
             margin-bottom: 4rem;
+             font-family: Arial, sans-serif;
         }
 
         .section-title {
@@ -173,6 +179,7 @@
             font-weight: bold;
             color: var(--text-dark);
             margin-bottom: 1rem;
+             font-family: Arial, sans-serif;
         }
 
         .section-subtitle {
@@ -180,6 +187,7 @@
             color: var(--text-light);
             max-width: 600px;
             margin: 0 auto;
+             font-family: Arial, sans-serif;
         }
 
         .services-grid {
@@ -241,11 +249,13 @@
             font-weight: 600;
             margin-bottom: 1rem;
             color: var(--text-dark);
+             font-family: Arial, sans-serif;
         }
 
         .service-description {
             color: var(--text-light);
             line-height: 1.8;
+             font-family: Arial, sans-serif;
         }
 
         /* TV Features Section */
@@ -268,6 +278,7 @@
             font-weight: bold;
             margin-bottom: 1.5rem;
             color: var(--text-dark);
+             font-family: Arial, sans-serif;
         }
 
         .tv-content p {
@@ -275,6 +286,7 @@
             color: var(--text-light);
             margin-bottom: 2rem;
             line-height: 1.8;
+             font-family: Arial, sans-serif;
         }
 
         .tv-features-list {
@@ -288,11 +300,13 @@
             align-items: center;
             gap: 1rem;
             font-size: 1.1rem;
+             font-family: Arial, sans-serif;
         }
 
         .tv-features-list i {
             color: var(--accent-color);
             font-size: 1.2rem;
+             font-family: Arial, sans-serif;
         }
 
         .tv-screen {
@@ -336,6 +350,7 @@
         .tv-tagline {
             font-size: 1.1rem;
             opacity: 0.9;
+             font-family: Arial, sans-serif;
         }
 
         /* Destinations */
@@ -378,6 +393,7 @@
 
         .destination-content {
             padding: 2rem;
+             font-family: Arial, sans-serif;
         }
 
         .destination-title {
@@ -385,12 +401,14 @@
             font-weight: 600;
             margin-bottom: 1rem;
             color: var(--text-dark);
+             font-family: Arial, sans-serif;
         }
 
         .destination-description {
             color: var(--text-light);
             margin-bottom: 1.5rem;
             line-height: 1.8;
+             font-family: Arial, sans-serif;
         }
 
         .destination-price {
@@ -398,6 +416,7 @@
             font-weight: bold;
             color: var(--accent-color);
             margin-bottom: 1rem;
+             font-family: Arial, sans-serif;
         }
 
        
@@ -479,4 +498,4 @@
   
 }
 
-       
+ 

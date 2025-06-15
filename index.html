@@ -67,6 +67,102 @@
         "url": "https://yourwebsite.com/"
     }
     </script>
+    <style>
+         /* Promotional Crawler */
+        .promo-crawler {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(45deg, #f86e63);
+            background-size: 400% 400%;
+            animation: gradientShift 3s ease infinite;
+            display: flex;
+            align-items: center;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .crawler-text {
+            white-space: nowrap;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: crawl 15s linear infinite;
+        }
+
+    </style>
+    <style>
+        /* Vacation-themed animations */
+        @keyframes crawl {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+     
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        @keyframes vacationGlow {
+            0%, 100% { box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4); }
+            50% { box-shadow: 0 10px 40px rgba(255, 107, 107, 0.8); }
+        }
+
+        @keyframes textGlow {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(1.2); }
+        }
+
+        @keyframes dotPulse {
+            0%, 100% { transform: scale(1.4); }
+            50% { transform: scale(1.6); }
+        }
+
+        @keyframes cursorPulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.3); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            .discount-highlight {
+                font-size: 2rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .crawler-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
 
   </head>
   <body>
@@ -128,71 +224,146 @@
 
     <!-- Main -->
     <main class="main">
+
+
       <!-- Hero Section -->
-      <section class="section hero-section">
-        <div class="container">
-          <div class="hero-inner">
-            <div class="hero-row">
-              <div class="hero-column hero-column-image">
-                <div
-                  class="hero-image wow fadeIn"
-                  data-wow-duration="1"
-                  data-wow-delay="0.10s"
-                >
-                  <img
-                    class="hero-plan-left"
-                    src="./images/hero-image/plan-left.png"
-                    alt=""
-                  />
-                  <img
-                    class="hero-main-image"
-                    src="./images/hero-image/main.svg"
-                    alt=""
-                  />
-                  <img
-                    class="hero-plan-right"
-                    src="./images/hero-image/plan-right.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="hero-column hero-column-content">
-                <div class="hero-content">
-                  <div
-                    class="hero-sub-heading wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.5s"
-                  >
-                    Ready for unforgettable travel experiences?
-                  </div>
-                  <h1
-                    class="hero-main-heading wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.6s"
-                  >
-                    Your Journey, <span class="text-decoration">Starts Here</span>
-                  </h1>
-                  <div
-                    class="hero-action wow fadeInUp"
-                    data-wow-duration="1"
-                    data-wow-delay="0.8s"
-                  >
-                    <a href="./bookings.html" class="hero-find-btn">Get Started</a>
-                    <a href="https://www.instagram.com/reel/DKrP0lcI7kN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="hero-play-btn">
-                      <span>
-                        <i class="bx bx-play"></i>
-                      </span>
-                      Play Demo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+       <!-- Promotional Crawler -->
+    <div class="promo-crawler">
+        <div class="crawler-text">
+            🏖️ Summer Vacation Sale - 50% Off all Packages! ✈️ Book Now & Save Big! 🌴 Limited Time Offer - Don't Miss Out! 🏖️ Paradise Awaits You! ✈️ 
         </div>
-      </section>
+    </div>
+
+
+        <section class="hero-section" id="home">
+
+            <div class="slide slide-1 active">
+                <div class="hero-content">
+                    <h1 class="hero-title">Discover Amazing Destinations</h1>
+                    <div class="cta-buttons">
+                        <a href="bookings.html" class="btn btn-primary">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="slide slide-2">
+                <div class="hero-content">
+                    <h1 class="hero-title">Luxury Travel Experiences</h1>
+                    <div class="cta-buttons">
+                        <a href="bookings.html" class="btn btn-primary">Book Premium</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="hero-content">
+                    <h1 class="hero-title">Adventure Awaits</h1>
+                    <div class="cta-buttons">
+                        <a href="bookings.html" class="btn btn-primary">Start Adventure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+      
+    </section>
+     
+
+
 
       
+    <!-- TV Feature Section -->
+    <section class="tv-feature fade-in" id="tv-feature">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel Stories & Experiences</h2>
+            </div>
+            <div class="tv-content">
+                <div class="tv-main">
+                    <div class="tv-screen">
+                        <div class="video-container">
+                            <div class="video-placeholder">
+                                <div class="play-button" onclick="playVideo('main')">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Featured Travel Story" class="video-thumbnail">
+                                <div class="video-overlay">
+                                    <h3>Exploring Hidden Gems of Southeast Asia</h3>
+                                    <p>Join us on an incredible journey through untouched landscapes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tv-controls">
+                            <div class="control-buttons">
+                                <button class="control-btn" onclick="previousVideo()">
+                                    <i class="fas fa-step-backward"></i>
+                                </button>
+                                <button class="control-btn play-pause" onclick="togglePlayPause()">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="control-btn" onclick="nextVideo()">
+                                    <i class="fas fa-step-forward"></i>
+                                </button>
+                                <button class="control-btn volume" onclick="toggleVolume()">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tv-sidebar">
+                    <h3>Featured Travel Shows</h3>
+                    <div class="video-playlist">
+                        <div class="playlist-item active" onclick="selectVideo(0)">
+                            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Southeast Asia">
+                            <div class="playlist-info">
+                                <h4>Hidden Gems of Southeast Asia</h4>
+                                <p>2:34</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item" onclick="selectVideo(1)">
+                            <img src="img/three.png" alt="Ghana">
+                            <div class="playlist-info">
+                                <h4>Akwaaba to Ghana</h4>
+                                <p>5:42</p>
+                            </div>
+                        </div>                    
+          
+                        <div class="playlist-item" onclick="selectVideo(5)">
+                            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Maldives">
+                            <div class="playlist-info">
+                                <h4>Maldives Underwater World</h4>
+                                <p>6:33</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1465070845512-2b2dbdc6df66?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <p>At <strong>OK World Travel & Tour</strong>, We render general and exceptional services and are committed to
+giving YOU the very best hospitality experience yet, both home and abroad.</p>
+                    <p>We also offer medical tourism services which include arranging medical procedures and
+appointments, flights and accommodations abroad. We coordinate with hospitals and clinics to
+ensure high quality care and follow up services.</p>
+                    <p>We are focused on luxury experiences at an affordable budget!</p>
+                </div>
+            </div>
+        </section>
 
       <!-- Category Section --> 
       <section class="section category-section">
@@ -298,49 +469,7 @@
         </div>
       </section>
 
-     
-
-
-    <!-- Search Section -->
-    <section class="search-section">
-        <div class="search-container">
-            <div class="search-box">
-                <form class="search-form">
-                    <div class="form-group">
-                        <label for="destination">Destination</label>
-                        <input type="text" id="destination" placeholder="Where do you want to go?">
-                    </div>
-                    <div class="form-group">
-                        <label for="checkin">Check-in</label>
-                        <input type="date" id="checkin">
-                    </div>
-                    <div class="form-group">
-                        <label for="checkout">Check-out</label>
-                        <input type="date" id="checkout">
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Guests</label>
-                        <select id="guests">
-                            <option>1 Guest</option>
-                            <option>2 Guests</option>
-                            <option>3 Guests</option>
-                            <option>4+ Guests</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
-                            <i class="fas fa-search"></i> Search Trips
-                        </button>
-                    </div>
-                
-                </form>
-            </div>
-        </div>
-    </section>
     
-
-
-
 
       <!-- Steps Section -->
       <section class="section steps-section">
@@ -495,43 +624,37 @@
     <div class="carousel-track">
         <div class="carousel-item" style="background-image: url(img/web/IMG_0315.jpg);">
             <div class="carousel-content">
-                <div class="name">South Korea Cultural Tour</div>
-                <div class="des">Experience the perfect blend of ancient traditions and cutting-edge modernity with our curated South Korea tours. From Seoul's vibrant streets to serene temple stays, we've successfully organized unforgettable journeys that showcase Korea's rich heritage.</div>
+                <div class="name">South Korea</div>
                 <button class="carousel-btn" onclick="window.location.href='bookings.html'">Explore Korea</button>
             </div>
         </div>
         <div class="carousel-item" style="background-image: url(img/web/IMG_9270.jpg);">
             <div class="carousel-content">
                 <div class="name">Turkey Adventure</div>
-                <div class="des">Walk through history in Istanbul, float over Cappadocia, and relax on Mediterranean shores. Our Turkey tours combine cultural immersion with breathtaking landscapes, designed with the insights of Ghana's National Tourism Ambassador.</div>
                 <button class="carousel-btn"onclick="window.location.href='bookings.html'">Discover Turkey</button>
             </div>
         </div>
         <div class="carousel-item" style="background-image: url(img/web/IMG_0158.jpg);">
             <div class="carousel-content">
-                <div class="name">Greek Island Odyssey</div>
-                <div class="des">From the Acropolis to Santorini's iconic sunsets, our Greece tours offer luxury experiences at reasonable prices. Enjoy curated experiences that blend ancient history with island relaxation, personally tested by our team.</div>
+                <div class="name">Greek Island</div>
                 <button class="carousel-btn"onclick="window.location.href='bookings.html'">Experience Greece</button>
             </div>
         </div>
         <div class="carousel-item" style="background-image: url(img/web/IMG_5434.jpg);">
             <div class="carousel-content">
                 <div class="name">Dubai & Abu Dhabi Luxury</div>
-                <div class="des">Experience Arabian opulence with our signature UAE tours. We arrange desert safaris, Burj Khalifa visits, and premium shopping experiences - all with the integrity and professionalism OK World is known for.</div>
                 <button class="carousel-btn"onclick="window.location.href='bookings.html'">Visit UAE</button>
             </div>
         </div>
         <div class="carousel-item" style="background-image: url(img/web/IMG_8956.jpg);">
             <div class="carousel-content">
                 <div class="name">Ghana Homecoming Experience</div>
-                <div class="des">Curated by Okyeame Kwame himself, explore Ghana's rich culture from Accra to Kumasi. Visit slave castles, dance to highlife rhythms, and enjoy premium hospitality - a perfect blend of education and entertainment.</div>
                 <button class="carousel-btn"onclick="window.location.href='bookings.html'">Discover Ghana</button>
             </div>
         </div>
         <div class="carousel-item" style="background-image: url(img/web/IMG_9794.JPG);">
             <div class="carousel-content">
                 <div class="name">Medical Tourism Packages</div>
-                <div class="des">Our specialized medical tourism services handle everything from hospital appointments to recovery accommodations. We partner with top facilities worldwide to ensure quality care at affordable prices.</div>
                 <button class="carousel-btn"onclick="window.location.href='bookings.html'">Learn More</button>
             </div>
         </div>
@@ -809,160 +932,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
-        <section class="hero-section" id="home">
-
-            <div class="slide slide-1 active">
-                <div class="hero-content">
-                    <h1 class="hero-title">Discover Amazing Destinations</h1>
-                    <p class="hero-subtitle">Embark on unforgettable journeys with our expertly crafted travel experiences</p>
-                    <div class="cta-buttons">
-                        <a href="bookings.html" class="btn btn-primary">Explore Now</a>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="slide slide-2">
-                <div class="hero-content">
-                    <h1 class="hero-title">Luxury Travel Experiences</h1>
-                    <p class="hero-subtitle">Indulge in premium accommodations and personalized service worldwide</p>
-                    <div class="cta-buttons">
-                        <a href="bookings.html" class="btn btn-primary">Book Premium</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide-3">
-                <div class="hero-content">
-                    <h1 class="hero-title">Adventure Awaits</h1>
-                    <p class="hero-subtitle">From cultural immersion to thrilling adventures, create memories that last forever</p>
-                    <div class="cta-buttons">
-                        <a href="bookings.html" class="btn btn-primary">Start Adventure</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide-dots">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-      
-    </section>
-
-
-
-    <!-- TV Feature Section -->
-    <section class="tv-feature fade-in" id="tv-feature">
-        <div class="container">
-            <div class="section-title">
-                <h2>Travel Stories & Experiences</h2>
-                <p>Watch inspiring travel documentaries and destination guides</p>
-            </div>
-            <div class="tv-content">
-                <div class="tv-main">
-                    <div class="tv-screen">
-                        <div class="video-container">
-                            <div class="video-placeholder">
-                                <div class="play-button" onclick="playVideo('main')">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Featured Travel Story" class="video-thumbnail">
-                                <div class="video-overlay">
-                                    <h3>Exploring Hidden Gems of Southeast Asia</h3>
-                                    <p>Join us on an incredible journey through untouched landscapes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tv-controls">
-                            <div class="control-buttons">
-                                <button class="control-btn" onclick="previousVideo()">
-                                    <i class="fas fa-step-backward"></i>
-                                </button>
-                                <button class="control-btn play-pause" onclick="togglePlayPause()">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                                <button class="control-btn" onclick="nextVideo()">
-                                    <i class="fas fa-step-forward"></i>
-                                </button>
-                                <button class="control-btn volume" onclick="toggleVolume()">
-                                    <i class="fas fa-volume-up"></i>
-                                </button>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tv-sidebar">
-                    <h3>Featured Travel Shows</h3>
-                    <div class="video-playlist">
-                        <div class="playlist-item active" onclick="selectVideo(0)">
-                            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Southeast Asia">
-                            <div class="playlist-info">
-                                <h4>Hidden Gems of Southeast Asia</h4>
-                                <p>2:34</p>
-                            </div>
-                        </div>
-                        <div class="playlist-item" onclick="selectVideo(1)">
-                            <img src="img/three.png" alt="Ghana">
-                            <div class="playlist-info">
-                                <h4>Akwaaba to Ghana</h4>
-                                <p>5:42</p>
-                            </div>
-                        </div>                    
-          
-                        <div class="playlist-item" onclick="selectVideo(5)">
-                            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Maldives">
-                            <div class="playlist-info">
-                                <h4>Maldives Underwater World</h4>
-                                <p>6:33</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    
-    <section class="destinations fade-in" id="destinations">
-        <div class="container">
-            <div class="section-title">
-                <h2>Popular Destinations</h2>
-                <p>Discover the world's most amazing places</p>
-            </div>
-            <div class="destinations-grid">
-                <div class="destination-card fade-in">
-                    <div class="destination-image" style="background-image: url('img/web/IMG_8401.JPG')"></div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Paris, France</h3>
-                        <p>The City of Light awaits with its romantic charm and iconic landmarks.</p>
-                        <div class="destination-price">From $899</div>
-                    </div>
-                </div>
-                <div class="destination-card fade-in">
-                    <div class="destination-image" style="background-image: url('img/web/IMG_6431.HEIC')"></div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Dubai, UAE</h3>
-                        <p>Luxury shopping, ultramodern architecture, and vibrant nightlife scene.</p>
-                        <div class="destination-price">From $999</div>
-                    </div>
-                </div>
-                <div class="destination-card fade-in">
-                    <div class="destination-image" style="background-image: url('img/about2.jpg')"></div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Maldives</h3>
-                        <p>Crystal clear waters and overwater bungalows in tropical paradise.</p>
-                        <div class="destination-price">From $1,599</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     
 
