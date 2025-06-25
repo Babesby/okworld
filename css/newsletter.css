@@ -1,0 +1,245 @@
+
+   .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.popup-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    background:linear-gradient(
+                135deg,
+                rgba(45, 125, 125, 0.95) 0%,
+                rgba(95, 204, 179, 0.85) 50%,
+                rgba(45, 125, 125, 0.95) 100%
+            );
+    background-size: cover;
+    background-position: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transform: rotate(90deg);
+}
+
+.content-overlay {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+}
+
+.header-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.header-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.welcome-message {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-section {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-title {
+    color: #2D7D7D;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #4A4A4A;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #5FCCB3;
+    box-shadow: 0 0 0 3px rgba(95, 204, 179, 0.2);
+}
+
+.subscribe-btn {
+    width: 100%;
+    padding: 16px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.subscribe-btn:hover {
+    background: #005499;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 204, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .popup-container {
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .content-overlay {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .header-section {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .header-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-message {
+        font-size: 0.85rem;
+        padding: 12px;
+    }
+    
+    .form-section {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-overlay {
+        padding: 10px;
+    }
+    
+    .popup-container {
+        max-height: 95vh;
+    }
+    
+    .header-section {
+        padding: 20px 15px;
+    }
+    
+    .header-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+    
+    .main-title {
+        font-size: 1.3rem;
+    }
+    
+    .form-section {
+        padding: 25px 15px;
+    }
+    
+    .form-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+   

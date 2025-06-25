@@ -1,0 +1,229 @@
+.nav-lock-scroll{overflow:hidden}.nav{display:none;position:fixed;top:0;bottom:0;left:0;right:0;z-index:900;overflow-x:hidden;overflow-y:auto}.nav ul{display:block;position:relative;zoom:1;list-style-type:none;margin:0;padding:0}.nav a,.nav a:active,.nav a:hover,.nav a:visited{display:block;position:relative}@media only screen and (min-width:960px){.nav{display:block;position:relative;bottom:auto;overflow:visible}.nav li{position:relative;white-space:nowrap}.nav>ul>li{display:inline-block}.nav ul{display:block}.nav ul ul{display:none;position:absolute;top:100%;left:0;z-index:901}.nav ul ul ul{top:5px;left:95%;z-index:902}.nav ul ul ul ul{z-index:903}.nav ul ul ul ul ul{z-index:904}.nav ul ul li.nav-left>ul{left:auto;right:95%}.nav-no-js .nav li:hover>ul{display:block}}@media only screen and (max-width:959px){.nav-no-js .nav-button:hover+.nav,.nav-no-js .nav-button:hover+.nav+.nav-close,.nav-no-js .nav:hover,.nav-no-js .nav:hover+.nav-close{display:block}}/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8fafc;
+}
+
+/* Navigation - Upgraded with New Colors */
+.nav-lock-scroll {
+  overflow: hidden;
+}
+
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #7FFFD4; /* Aquamarine background */
+  font-weight: 500;
+}
+
+.nav ul {
+  display: block;
+  position: relative;
+  zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a,
+.nav a:active,
+.nav a:hover,
+.nav a:visited {
+  display: block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #6495ED; /* Cornflower Blue on hover */
+  color: white;
+}
+
+@media only screen and (min-width: 960px) {
+  .nav {
+    display: block;
+    position: relative;
+    bottom: auto;
+    overflow: visible;
+    background-color: transparent;
+  }
+  
+  .nav li {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .nav > ul > li {
+    display: inline-block;
+  }
+  
+  .nav ul {
+    display: block;
+  }
+  
+  .nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 901;
+    background-color: #7FFFD4; /* Aquamarine dropdowns */
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .nav ul ul ul {
+    top: 5px;
+    left: 95%;
+    z-index: 902;
+  }
+  
+  .nav ul ul ul ul {
+    z-index: 903;
+  }
+  
+  .nav ul ul ul ul ul {
+    z-index: 904;
+  }
+  
+  .nav ul ul li.nav-left > ul {
+    left: auto;
+    right: 95%;
+  }
+  
+  .nav-no-js .nav li:hover > ul {
+    display: block;
+  }
+  
+  .nav > ul > li > a {
+    padding: 15px 25px;
+    color: #333;
+  }
+  
+  .nav > ul > li > a:hover {
+    background-color: #6495ED; /* Cornflower Blue */
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .nav-no-js .nav-button:hover + .nav,
+  .nav-no-js .nav-button:hover + .nav + .nav-close,
+  .nav-no-js .nav:hover,
+  .nav-no-js .nav:hover + .nav-close {
+    display: block;
+  }
+}
+
+/* Additional Styling for Travel Site */
+.header {
+  background: linear-gradient(135deg, #7FFFD4 0%, #6495ED 100%); /* Aquamarine to Cornflower Blue gradient */
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00FFFF; /* Vibrant Cyan for CTAs */
+  color: #333;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+  background-color: #00e6e6;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 255, 0);
+  }
+}
+
+.destination-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+.destination-card h3 {
+  color: #6495ED; /* Cornflower Blue for headings */
+}
+
+.section-title {
+  color: #6495ED; /* Cornflower Blue */
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #00FFFF; /* Cyan accent */
+}
+
+.testimonial {
+  background-color: #7FFFD4; /* Aquamarine background */
+  padding: 30px;
+  border-radius: 8px;
+  color: #333;
+}
+
+.footer {
+  background-color: #6495ED; /* Cornflower Blue footer */
+  color: white;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00FFFF; /* Cyan hover */
+}
