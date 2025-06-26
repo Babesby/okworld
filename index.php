@@ -362,7 +362,7 @@ button:hover,
           <div class="slideshow">
             <div class="slider">
              <div class="item"><img src="img/web/two.jpg" loading="lazy"/></div>
-              <div class="item"><img src="img/web/oh.jpg" loading="lazy"/></div>
+              <div class="item"><img src="img/web/oh.png" loading="lazy"/></div>
               <div class="item"><img src="img/web/three.jpg" loading="lazy"/></div>
               <div class="item"><img src="img/web/four.jpg"loading="lazy" /></div>
             </div>
