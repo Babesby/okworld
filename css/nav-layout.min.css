@@ -57,7 +57,7 @@ header {
   z-index: 901;
   padding-left: 10px;
   line-height: 4.4rem;
-  background: #6495ED; /* Cornflower Blue header */
+  background: #d1f7f0; /* Cornflower Blue header */
   color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -73,7 +73,7 @@ header h1 {
 header h1:before {
   content: "\E004";
   margin-right: 8px;
-  color: #00FFFF; /* Cyan icon */
+  color: #d1f7f0; /* Cyan icon */
 }
 
 /* Navigation Button Styles */
@@ -121,20 +121,20 @@ header h1:before {
 
 .nav-button:hover,
 .nav-close:hover {
-  color: #00FFFF; /* Cyan hover */
+  color: #d1f7f0; /* Cyan hover */
 }
 
 /* Main Navigation Styles */
 .nav {
   padding-top: 4.4rem;
   line-height: 4.4rem;
-  background: #7FFFD4; /* Aquamarine background */
+  background: #5fccb3; /* Aquamarine background */
   color: #333;
 }
 
 .nav ul {
   border-radius: 0 0 6px 6px;
-  background: #7FFFD4; /* Aquamarine */
+  background: #5fccb3; /* Aquamarine */
 }
 
 .nav ul ul {
@@ -162,7 +162,7 @@ header h1:before {
 .nav li.nav-active>a,
 .nav li:hover>a {
   color: white;
-  background: #6495ED; /* Cornflower Blue hover */
+  background: #d1f7f0; /* Cornflower Blue hover */
 }
 
 .nav .nav-submenu>ul {
@@ -267,7 +267,7 @@ header h1:before {
   }
   
   .nav ul ul li:hover>a {
-    background: #6495ED; /* Cornflower Blue */
+    background: #d1f7f0; /* Cornflower Blue */
     color: white;
   }
   

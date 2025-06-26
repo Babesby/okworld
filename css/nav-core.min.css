@@ -24,7 +24,7 @@ body {
   z-index: 900;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #7FFFD4; /* Aquamarine background */
+  background-color: #5fccb3; /* Aquamarine background */
   font-weight: 500;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .nav a:hover {
-  background-color: #6495ED; /* Cornflower Blue on hover */
+  background-color: #d1f7f0; /* Cornflower Blue on hover */
   color: white;
 }
 
@@ -82,7 +82,7 @@ body {
     top: 100%;
     left: 0;
     z-index: 901;
-    background-color: #7FFFD4; /* Aquamarine dropdowns */
+    background-color: #5fccb3; /* Aquamarine dropdowns */
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 4px 4px;
@@ -117,7 +117,7 @@ body {
   }
   
   .nav > ul > li > a:hover {
-    background-color: #6495ED; /* Cornflower Blue */
+    background-color: #d1f7f0; /* Cornflower Blue */
     color: white;
   }
 }
@@ -133,7 +133,7 @@ body {
 
 /* Additional Styling for Travel Site */
 .header {
-  background: linear-gradient(135deg, #7FFFD4 0%, #6495ED 100%); /* Aquamarine to Cornflower Blue gradient */
+  background: linear-gradient(135deg, #5fccb3 0%, #d1f7f0 100%); /* Aquamarine to Cornflower Blue gradient */
   padding: 2rem 0;
   color: white;
   text-align: center;
@@ -141,7 +141,7 @@ body {
 
 .cta-button {
   display: inline-block;
-  background-color: #00FFFF; /* Vibrant Cyan for CTAs */
+  background-color: #d1f7f0; /* Vibrant Cyan for CTAs */
   color: #333;
   font-weight: 600;
   padding: 12px 30px;
@@ -185,11 +185,11 @@ body {
 }
 
 .destination-card h3 {
-  color: #6495ED; /* Cornflower Blue for headings */
+  color: #d1f7f0; /* Cornflower Blue for headings */
 }
 
 .section-title {
-  color: #6495ED; /* Cornflower Blue */
+  color: #d1f7f0; /* Cornflower Blue */
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 30px;
@@ -203,18 +203,18 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background-color: #00FFFF; /* Cyan accent */
+  background-color: #d1f7f0; /* Cyan accent */
 }
 
 .testimonial {
-  background-color: #7FFFD4; /* Aquamarine background */
+  background-color: #5fccb3; /* Aquamarine background */
   padding: 30px;
   border-radius: 8px;
   color: #333;
 }
 
 .footer {
-  background-color: #6495ED; /* Cornflower Blue footer */
+  background-color: #d1f7f0; /* Cornflower Blue footer */
   color: white;
   padding: 40px 0;
 }
@@ -225,5 +225,5 @@ body {
 }
 
 .footer a:hover {
-  color: #00FFFF; /* Cyan hover */
+  color: #d1f7f0; /* Cyan hover */
 }

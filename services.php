@@ -148,7 +148,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Flight Bookings & Reservations</h3>
                         <p class="service_description">Seamless flight booking services with access to global airlines, competitive pricing, and 24/7 support for all your travel needs.</p>
-                        <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                        <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Group Tours & Packages</h3>
                         <p class="service_description">Carefully curated group travel experiences featuring popular destinations, expert guides, and all-inclusive packages for memorable adventures.</p>
-                       <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                       <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Corporate Retreats & Seminars</h3>
                         <p class="service_description">Professional event planning for corporate retreats, team building activities, and business seminars in inspiring locations worldwide.</p>
-                        <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                        <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Luxury Car Rentals</h3>
                         <p class="service_description">Premium vehicle rental services featuring luxury cars, SUVs, and exotic vehicles with professional chauffeur options available.</p>
-                       <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                       <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Passport & Visa Assistance</h3>
                         <p class="service_description">Complete documentation support including passport renewals, visa applications, and travel document processing for hassle-free international travel.</p>
-                        <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                        <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Travel Consultancy</h3>
                         <p class="service_description">Expert travel advice and personalized itinerary planning with insider knowledge to create unforgettable travel experiences tailored to your preferences.</p>
-                        <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a>  
+                        <a href="book.php" class="learn-more-btn">Learn More</a>  
                       </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Food Tourism</h3>
                         <p class="service_description">Culinary adventures featuring local cuisine, cooking classes, food tours, and authentic dining experiences in destinations around the world.</p>
-                        <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                        <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -260,7 +260,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Medical Tourism</h3>
                         <p class="service_description">Comprehensive medical travel services connecting you with world-class healthcare facilities and wellness retreats for treatments and recovery.</p>
-                       <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                       <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>
@@ -276,7 +276,7 @@ button:hover,
                     <div class="service_content">
                         <h3>Bespoke Confidential Services</h3>
                         <p class="service_description">Exclusive, personalized travel arrangements with complete discretion and privacy for high-profile clients requiring specialized attention and security.</p>
-                        <a href="book.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a> 
+                        <a href="book.php" class="learn-more-btn">Learn More</a> 
                     </div>
                 </div>
             </div>

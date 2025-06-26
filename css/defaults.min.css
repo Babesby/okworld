@@ -11,13 +11,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --aquamarine: #7FFFD4;
-    --cornflower-blue: #6495ED;
-    --cyan: #00FFFF;
-    --neon-pink: #ff6ec7;
-    --pastel-blue: #c2f5ff;
-    --pastel-aqua: #d1f7f0;
-    --deep-blue: #0077cc;
+  --aquamarine: #2d7d7d;
+  --cyan: #5fccb3;
+  --pastel-aqua: #d1f7f0;
+  --deep-blue: #0077cc;
 }
 
 * {
@@ -40,23 +37,10 @@ body {
 
 /* Add these to your existing :root variables */
 :root {
-    --aquamarine: #7FFFD4;
-    --cornflower-blue: #6495ED;
-    --cyan: #00FFFF;
-    --neon-pink: #ff6ec7;
-    --pastel-blue: #c2f5ff;
-    --pastel-aqua: #d1f7f0;
-    --deep-blue: #0077cc;
-    --text-primary: #333;
-    --text-secondary: #555;
-    --white: #ffffff;
-    --shadow-sm: 0 4px 10px rgba(100, 149, 237, 0.2);
-    --shadow-md: 0 10px 30px rgba(100, 149, 237, 0.3);
-    --shadow-lg: 0 15px 40px rgba(0, 255, 255, 0.3);
-    --border-radius-sm: 8px;
-    --border-radius-md: 16px;
-    --border-radius-lg: 24px;
-    --transition-base: all 0.3s ease;
+  --aquamarine: #2d7d7d;
+  --cyan: #5fccb3;
+  --pastel-aqua: #d1f7f0;
+  --deep-blue: #0077cc;
 }
 
 /* Typography Scale */

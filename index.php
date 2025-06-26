@@ -2,11 +2,21 @@
 $pagename = "Home";
 include("header.php");
 ?>
+
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ Fixed Font Awesome (v6.5.0) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH9rrnYqBFyCnphVhOonFhfv3i9X2+nGP2qzKRU3o5TQgMPtbRWbcnGuHwIhGlf3GgMk6uO/IsnIv4pSsdzO3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ✅ Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
 <style>
 
 .footer-section
 {
-   background: rgba(255, 255, 255, 0.98); /* More opaque white */
+   background:rgb(214, 240, 236)!important; /* More opaque white */
     /* Add these properties to ensure solid background */
     -webkit-backdrop-filter: blur(30px); /* Optional: for frosted glass effect */
     backdrop-filter: blur(30px); /* Optional: for frosted glass effect */
@@ -86,8 +96,13 @@ button:hover,
 /* === Icons === */
 .fas, 
 .far, 
-.bx {
+.bx .i{
   color: #5FCCB3 !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-family: inherit !important;
+  visibility: visible !important;
 }
 
 /* === Special Cases === */
@@ -95,9 +110,245 @@ button:hover,
   background-color: rgba(45, 125, 125, 0.1) !important; /* 2D7D7D with 10% opacity */
 }
 
-.crawler-content a {
-  color: #5FCCB3 !important;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --aquamarine: #2d7d7d;
+  --cyan: #5fccb3;
+  --pastel-aqua: #d1f7f0;
+  --deep-blue: #0077cc;
 }
+
+.tv-feature-section {
+  width: 100%;
+  position: relative;
+  margin: 60px 0;
+  padding: 30px 0;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(100, 149, 237, 0.2);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--aquamarine), var(--cyan));
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.crawler {
+  width: 100%;
+  background: linear-gradient(90deg, var(--pastel-blue));
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 15px 0;
+}
+
+.crawler-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--deep-blue);
+  white-space: nowrap;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.package-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(100, 149, 237, 0.2);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.4s ease;
+  border: 2px solid var(--pastel-blue);
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+  border-color: var(--cyan);
+}
+
+.package-image {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.package-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+}
+
+.package-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.package-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--cornflower-blue);
+  margin: 10px 0;
+}
+
+.package-description {
+  color: #555;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.book-now-btn {
+  background: linear-gradient(45deg, var(--cornflower-blue), var(--aquamarine));
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(100, 149, 237, 0.4);
+}
+
+.book-now-btn:hover {
+  background: linear-gradient(45deg, var(--deep-blue), var(--cyan));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: white;
+  border: 2px solid var(--aquamarine);
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(127, 255, 212, 0.2);
+  color: var(--deep-blue);
+}
+
+.filter-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(100, 149, 237, 0.3);
+  border-color: var(--cyan);
+}
+
+.filter-btn.active {
+  background: var(--cornflower-blue);
+  color: white;
+  border-color: var(--cornflower-blue);
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--aquamarine);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(127, 255, 212, 0.2);
+  transition: all 0.3s ease;
+  color: var(--cornflower-blue);
+}
+
+.nav-btn:hover {
+  background: var(--aquamarine);
+  transform: scale(1.1);
+  color: white;
+  border-color: var(--cyan);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .package-card {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .crawler-content {
+    font-size: 1.2rem;
+  }
+  .filters {
+    gap: 10px;
+  }
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
 </style>
   
     <!-- Header Section -->
@@ -122,7 +373,7 @@ button:hover,
     <!-- Core Services -->
 
 <!-- Core Services Section -->
-<section id="hero_avatar" style="background: url('your-background-image.jpg') no-repeat center center/cover; padding: 80px 0; font-family: 'Poppins', sans-serif;">
+<section id="hero_avatar" style="background: #d1f7f0; no-repeat center center/cover; padding: 80px 0; font-family: 'Poppins', sans-serif;">
   <div class="container">
     <div class="row justify-content-center align-items-center text-center text-white">
       <div class="col-12 mb-5">
@@ -134,7 +385,7 @@ button:hover,
       <div class="col-6 col-md-3 mb-4">
         <a href="study.php" style="text-decoration: none;">
         <div class="service-icon" style="transition: transform 0.3s ease;">
-          <i class="fa-solid fa-graduation-cap" style="font-size: 3rem; color: var(--cyan);"></i>
+          <i><img src="img/icon2.svg" alt="" loading="lazy"></i>
           <h4 style="margin-top: 15px; font-size: 1.2rem; color: #fff;">Study Abroad</h4>
         </div>
         </a>
@@ -144,7 +395,7 @@ button:hover,
       <div class="col-6 col-md-3 mb-4">
         <a href="work.php" style="text-decoration: none;">
         <div class="service-icon">
-          <i class="fa-solid fa-briefcase" style="font-size: 3rem; color: var(--cornflower-blue);"></i>
+           <i><img src="img/icons5.svg" alt="" loading="lazy"></i>
           <h4 style="margin-top: 15px; font-size: 1.2rem; color: #fff;">Work Abroad</h4>
         </div></a>
       </div>
@@ -153,7 +404,7 @@ button:hover,
       <div class="col-6 col-md-3 mb-4">
         <a href="https://okworld.com.gh/" style="text-decoration: none;">
         <div class="service-icon">
-          <i class="fa-solid fa-user-doctor" style="font-size: 3rem; color: var(--aquamarine);"></i>
+          <i><img src="img/icons3.svg" alt="" loading="lazy"></i>
           <h4 style="margin-top: 15px; font-size: 1.2rem; color: #fff;">Medical Tourism</h4>
         </div></a>
       </div>
@@ -162,7 +413,7 @@ button:hover,
       <div class="col-6 col-md-3 mb-4">
         <a href="medical-tourism.html" style="text-decoration: none;">
         <div class="service-icon">
-          <i class="fa-solid fa-plane-departure" style="font-size: 3rem; color: var(--cyan);"></i>
+          <i><img src="img/icons4.svg" alt="" loading="lazy"></i>
           <h4 style="margin-top: 15px; font-size: 1.2rem; color: #fff;">Merch</h4>
         </div></a>
       </div>
@@ -175,7 +426,7 @@ button:hover,
         <h2 class="section-title">WHAT'S NEW</h2>
         <div class="crawler">
           <div class="crawler-content"><a href="book.php">
-            ✨ LIMITED TIME OFFERS ✨ 50% OFF ✨ LUXURY PACKAGES FROM $999 ✨ EARLY BIRD DISCOUNTS FOR SUMMER 2025 ✨
+           ✈️ Discover Dubai • Explore Ghana • Travel to Kenya • UK Adventures • Book Now with OK World Travel & Tour ✈️
           </a></div>
         </div>
         <div class="video-slideshow">
@@ -190,9 +441,6 @@ button:hover,
           </video>
           <video muted playsinline class="next-video" style="width: 100%; height: auto;">
             <source src="videos/video3.mp4" type="video/mp4">        
-          </video>
-          <video muted playsinline class="next-video" style="width: 100%; height: auto;">
-            <source src="videos/vi.mp4" type="video/mp4">        
           </video>
         </div>
       </section> 
@@ -271,18 +519,18 @@ button:hover,
           <div class="row between no-gutters">
             <div class="at-column col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <div class="item quality at-user">
-                <div class="image"><i class="far fa-star"></i></div>
+                <div class="image"><i><img src="img/iconsx.svg" alt="" loading="lazy"></i></div>
                   <h1 class="big_title at-user__name">Travel Quality</h1>
                     <p>We offer expertly curated tours and adventure, culture, and luxury at affordable prices.</p>
-                      <a href="about.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a>                   
+                      <a href="about.php" class="learn-more-btn">Learn More</a>                   
                 </div>
               </div>
             <div class="at-column col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <div class="item health at-user">
-                <div class="image"><i class="fas fa-user-shield"></i></div>
+                <div class="image"><i><img src="img/iconsx1.svg" alt="" loading="lazy"></i></i></div>
                   <h1 class="big_title at-user__name">Medical Travel</h1>
                     <p>We handle medical trips end-to-end from flights to treatment, ensuring comfort, safety, and top-tier care.</p>
-                     <a href="about.php#value_link" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a>
+                     <a href="about.php#value_link" class="learn-more-btn">Learn More</a>
               </div>
             </div>
           </div>
@@ -290,14 +538,14 @@ button:hover,
       </section>
 
     <!-- Statistics -->
-      <section class="section steps-section">
+      <section class="section steps-section"style="background:#d1f7f0;" >
         <div class="container">
           <div class="steps-row">
             <div class="steps-column steps-column-steps">
               <img src="img/tra.svg" alt="" />
             </div>
             
-            <div class="steps-column steps-column-card">
+            <div class="steps-column steps-column-card" style="background:#d1f7f0;">
               <div class="step-card wow fadeInUp"data-wow-duration="1"data-wow-delay="0.5s">
                 <a href="#">
                   <div class="step-card-header">
@@ -320,14 +568,14 @@ button:hover,
                 </a>
               </div>
 
-              <div class="step-card-small">
+              <div class="step-card-small"style="background:#d1f7f0;">
                 <a href="#" class="wow fadeInUp"data-wow-duration="1"data-wow-delay="0.6s">
                   <div class="step-card-small-head">
                     <div class="step-card-small-image"><img src="./img/web/IMG_0796.jpg" alt="" /></div>
                     <div class="step-card-small-copy">
                       <div class="step-card-small-status">Ongoing</div>
                       <div class="step-card-small-title">Trip to Dubai</div>
-                     <a href="book.php" class="learn-more-btn">Book<i class="fas fa-chevron-circle-right"></i></a>                    
+                     <a href="book.php" class="learn-more-btn">Book</a>                    
                     </div>
                   </div>
                 </a>
@@ -339,7 +587,7 @@ button:hover,
       </section>
  
     <!-- Gallery -->
-     <section id="home_services">
+     <section>
         <div class="fluid-container">
           <div class="section_title">
             <h1 class="big_title">Gallery</h1>
@@ -397,13 +645,13 @@ button:hover,
               </div>
             </div>
             <div class="learn-more-section">
-              <a href="galla.php" class="learn-more-btn">Learn More<i class="fas fa-chevron-circle-right"></i></a>
+              <a href="galla.php" class="learn-more-btn">Learn More</a>
             </div>
         </div>
       </section>
 
     <!-- Testimonials -->
-      <section class="section testimonials-section swiper">
+      <section class="section testimonials-section swiper" style="background:#d1f7f0;">
         <div class="container">
           <div class="testimonials-row">
             <div class="testimonials-column">
@@ -433,7 +681,7 @@ button:hover,
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonials-card">
-                      <div class="testimonials-avatar"><img src="img/web/IMG_0094.jpg " alt=""/></div>
+                      <div class="testimonials-avatar"><img src="img/web/ga4.jpg " alt=""/></div>
                       <div class="testimonials-quote">
                         “Swimming with manta rays in the Maldives? Worth every penny. Like a dream! Thank you OK World”
                       </div>

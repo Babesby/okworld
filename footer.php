@@ -74,7 +74,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 </footer>
 
-<footer class="footer-copyright">
+<footer class="footer-copyright" style="background:#f7f7f7;">
     <div class="row">
         <div class="container">
             <p class="text">© 2025 OK World Travel & Tour | All Rights Reserved</p>

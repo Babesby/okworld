@@ -19,21 +19,31 @@
     <!-- Your existing meta tags here -->
     
     <!-- CSS -->
+     <!-- Font Awesome (latest) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" !important/>
+<!-- Boxicons -->
+ <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ Fixed Font Awesome (v6.5.0) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH9rrnYqBFyCnphVhOonFhfv3i9X2+nGP2qzKRU3o5TQgMPtbRWbcnGuHwIhGlf3GgMk6uO/IsnIv4pSsdzO3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ✅ Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" !important>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
-    <link rel="stylesheet" href="css/crawler.css"/>
-    <link rel="stylesheet" href="css/gallery.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallerry.css" />
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/newsletter.css">
-    <link rel="stylesheet" href="css/whatsap.css">
+    <link rel="stylesheet" href="css/whatsapx.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/video.css">
-   
-    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/response.css" />
     
     <style>* {
     margin: 0;
